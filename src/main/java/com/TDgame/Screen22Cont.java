@@ -11,78 +11,78 @@ public class Screen22Cont {
     final int width = 400;
 
     @FXML
-    private Button HireWorker;
+    private Button AccountStats;
 
     @FXML
-    private Button PayEmployee;
+    private Button CorporationStats;
 
     @FXML
-    private Button A;
+    private Button BankStats;
 
     @FXML
-    private Button B;
+    private Button CustomerStats;
 
     @FXML
-    private Button C;
+    private Button EmployeeStats;
 
 
     @FXML
-    private void onHireWorker() throws IOException {
+    private void onAccountStats() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
     private void loadScene1(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) HireWorker.getScene().getWindow();
+        Stage stage1 = (Stage) AccountStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onPayEmployee() throws IOException {
+    private void onCorporationStats() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 
     private void loadScene2(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) PayEmployee.getScene().getWindow();
+        Stage stage1 = (Stage) CorporationStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onA() throws IOException {
+    private void onBankStats() throws IOException {
         FXMLLoader fxmlLoader3 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
-        loadScene1(fxmlLoader3, height, width);
+        loadScene3(fxmlLoader3, height, width);
     }
 
     private void loadScene3(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) HireWorker.getScene().getWindow();
+        Stage stage1 = (Stage) BankStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onB() throws IOException {
+    private void onCustomerStats() throws IOException {
         FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
-        loadScene1(fxmlLoader4, height, width);
+        loadScene4(fxmlLoader4, height, width);
     }
 
     private void loadScene4(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) PayEmployee.getScene().getWindow();
+        Stage stage1 = (Stage) CustomerStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onC() throws IOException {
+    private void onEmployeeStats() throws IOException {
         FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
-        loadScene1(fxmlLoader4, height, width);
+        loadScene5(fxmlLoader4, height, width);
     }
 
     private void loadScene5(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) PayEmployee.getScene().getWindow();
+        Stage stage1 = (Stage) EmployeeStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 }

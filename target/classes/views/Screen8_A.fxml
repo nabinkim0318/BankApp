@@ -20,7 +20,7 @@
             </Label>
             <Button fx:id="Cancel" layoutX="164.0" layoutY="323.0" mnemonicParsing="false" style="-fx-background-color: #295D8A#295D8A;" text="Cancel" textFill="WHITE" />
             <Button fx:id="Create" layoutX="376.0" layoutY="323.0" mnemonicParsing="false" style="-fx-background-color: #295D8A#295D8A;" text="Create" textFill="WHITE" />
-            <TextField fx:id="InitialBalance" layoutX="146.0" layoutY="245.0" prefHeight="26.0" prefWidth="136.0" text="Initial balance" />
+            <TextField fx:id="InitialBalance" layoutX="146.0" layoutY="245.0" prefHeight="26.0" prefWidth="136.0" text="\$Initial balance" />
             <MenuButton fx:id="Bank" layoutX="193.0" layoutY="135.0" mnemonicParsing="false" onAction="#onBank" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;" text="Bank" textFill="WHITE">
                <items>
                   <MenuItem mnemonicParsing="false" text="Action 1" />
@@ -39,7 +39,7 @@
                   <MenuItem mnemonicParsing="false" text="Action 2" />
                </items>
             </MenuButton>
-            <TextField fx:id="MinBalance" layoutX="146.0" layoutY="278.0" prefHeight="26.0" prefWidth="136.0" text="Min Balance" />
+            <TextField fx:id="MinBalance" layoutX="146.0" layoutY="278.0" prefHeight="26.0" prefWidth="136.0" text="\$Min Balance" />
             <TextField fx:id="MaxWithdrawals" layoutX="308.0" layoutY="278.0" prefHeight="26.0" prefWidth="136.0" text=" Max Withdrawals" />
             <TextField fx:id="InterestRate" layoutX="308.0" layoutY="245.0" prefHeight="26.0" prefWidth="136.0" text=" Interest Rate" />
             <Label layoutX="236.0" layoutY="114.0" text="Create New Accounts">

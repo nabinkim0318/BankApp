@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.MenuButton;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -26,6 +27,18 @@ public class Screen8_CCont {
 
     @FXML
     private CheckBox AddingOwner;
+
+    @FXML
+    private TextField InitialBalance;
+
+    @FXML
+    private TextField MinBalance;
+
+    @FXML
+    private TextField MaxWithdrawals;
+
+    @FXML
+    private TextField InterestRate;
 
     @FXML
     private void onConfirm() throws IOException {

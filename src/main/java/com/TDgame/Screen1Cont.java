@@ -18,16 +18,16 @@ public class Screen1Cont {
     private Button Create;
 
     @FXML
-    private TextField NumOfPayments;
+    private TextField ReservedAssets;
 
     @FXML
-    private TextField Salary;
+    private TextField LongName;
 
     @FXML
-    private TextField Accumulated;
+    private TextField ShortName;
 
     @FXML
-    private TextField ID;
+    private TextField CorporationID;
 
     @FXML
     private void onCancel() throws IOException {

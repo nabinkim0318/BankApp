@@ -3,6 +3,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -15,6 +16,27 @@ public class Screen2Cont {
 
     @FXML
     private Button create;
+
+    @FXML
+    private TextField Name;
+
+    @FXML
+    private TextField BankID;
+
+    @FXML
+    private TextField Street;
+
+    @FXML
+    private TextField StateAbbr;
+
+    @FXML
+    private TextField ZipCode;
+
+    @FXML
+    private TextField City;
+
+    @FXML
+    private TextField ReservedAssets;
 
     @FXML
     private void onCancel() throws IOException {

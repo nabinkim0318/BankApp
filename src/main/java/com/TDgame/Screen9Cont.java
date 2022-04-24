@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.MenuButton;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -23,6 +24,9 @@ public class Screen9Cont {
 
     @FXML
     private MenuButton Account;
+
+    @FXML
+    private TextField FeeType;
 
     @FXML
     private void onConfirm() throws IOException {

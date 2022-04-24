@@ -3,6 +3,7 @@
 CS 4400 project to-do
 - Combine Sophia’s work 
 - Create TextFields in the controller classes
+- Fix button errors
 
 
 - Connecting Sql to Java (how? next.js + mysql npm - maybe)

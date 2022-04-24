@@ -7,34 +7,37 @@ import javafx.scene.control.MenuButton;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class Screen4Cont {
+public class Screen6_MCont {
     final int height = 600;
     final int width = 400;
 
     @FXML
-    private Button confirm;
+    private Button Confirm;
 
     @FXML
     private Button Back;
 
     @FXML
-    private MenuButton ID;
+    private MenuButton Bank;
+
+    @FXML
+    private MenuButton Employee;
 
     @FXML
     private void onConfirm() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6_M.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
     private void loadScene1(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) confirm.getScene().getWindow();
+        Stage stage1 = (Stage) Confirm.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
     private void onBack() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen23.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 
@@ -45,15 +48,26 @@ public class Screen4Cont {
     }
 
     @FXML
-    private void onID() throws IOException {
+    private void onBank() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
         loadScene3(fxmlLoader1, height, width);
     }
 
     private void loadScene3(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) ID.getScene().getWindow();
+        Stage stage1 = (Stage) Bank.getScene().getWindow();
+        stage1.setScene(scene1);
+    }
+
+    @FXML
+    private void onEmployee() throws IOException {
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
+        loadScene4(fxmlLoader1, height, width);
+    }
+
+    private void loadScene4(FXMLLoader fxml, int width, int height) throws IOException {
+        Scene scene1 = new Scene(fxml.load(), width, height);
+        Stage stage1 = (Stage) Employee.getScene().getWindow();
         stage1.setScene(scene1);
     }
 }
-

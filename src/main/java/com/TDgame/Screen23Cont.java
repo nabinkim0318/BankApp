@@ -18,7 +18,7 @@ public class Screen23Cont {
 
     @FXML
     private void onHireWorker() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6_M.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 

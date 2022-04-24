@@ -28,7 +28,7 @@ public class Screen22Cont {
 
     @FXML
     private void onAccountStats() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen14.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
@@ -40,7 +40,7 @@ public class Screen22Cont {
 
     @FXML
     private void onCorporationStats() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen16.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 
@@ -52,7 +52,7 @@ public class Screen22Cont {
 
     @FXML
     private void onBankStats() throws IOException {
-        FXMLLoader fxmlLoader3 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
+        FXMLLoader fxmlLoader3 = new FXMLLoader(getClass().getResource("/views/Screen15.fxml"));
         loadScene3(fxmlLoader3, height, width);
     }
 
@@ -64,7 +64,7 @@ public class Screen22Cont {
 
     @FXML
     private void onCustomerStats() throws IOException {
-        FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
+        FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen17.fxml"));
         loadScene4(fxmlLoader4, height, width);
     }
 
@@ -76,7 +76,7 @@ public class Screen22Cont {
 
     @FXML
     private void onEmployeeStats() throws IOException {
-        FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
+        FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen18.fxml"));
         loadScene5(fxmlLoader4, height, width);
     }
 

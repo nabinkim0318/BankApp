@@ -32,7 +32,7 @@
             </MenuButton>
             <Button fx:id="Back" layoutX="164.0" layoutY="316.0" mnemonicParsing="false" onAction="#onBank" style="-fx-background-color: #295D8A#295D8A;" text="Back" textFill="WHITE" />
             <Button fx:id="Confirm" layoutX="376.0" layoutY="316.0" mnemonicParsing="false" onAction="#onConfirm" style="-fx-background-color: #295D8A#295D8A;" text="Confirm" textFill="WHITE" />
-            <TextField fx:id="FeeType" layoutX="222.0" layoutY="244.0" onAction="#onFeeType" text="Fee type" />
+            <TextField fx:id="FeeType" layoutX="222.0" layoutY="244.0" text="Fee type" />
          </children>
       </AnchorPane>
    </center>

@@ -4,12 +4,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.TDgame.Screen7Cont">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TDgame.Screen7Cont">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: aliceblue;" BorderPane.alignment="CENTER">
          <children>
@@ -18,13 +17,13 @@
                   <Font name="Hiragino Sans W5" size="21.0" />
                </font>
             </Label>
-            <MenuButton fx:id="Bank" layoutX="187.0" layoutY="146.0" mnemonicParsing="false" onAction="#onBank" prefHeight="28.0" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;" text="Bank" textFill="WHITE">
+            <MenuButton fx:id="Bank" layoutX="187.0" layoutY="152.0" mnemonicParsing="false" onAction="#onBank" prefHeight="28.0" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;" text="Bank" textFill="WHITE">
                <items>
                   <MenuItem mnemonicParsing="false" text="Action 1" />
                   <MenuItem mnemonicParsing="false" text="Action 2" />
                </items>
             </MenuButton>
-            <MenuButton fx:id="Employee" layoutX="187.0" layoutY="193.0" mnemonicParsing="false" onAction="#onEmployee" prefHeight="28.0" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;" text="Employee" textFill="WHITE">
+            <MenuButton fx:id="Employee" layoutX="187.0" layoutY="211.0" mnemonicParsing="false" onAction="#onEmployee" prefHeight="28.0" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;" text="Employee" textFill="WHITE">
                <items>
                   <MenuItem mnemonicParsing="false" text="Action 1" />
                   <MenuItem mnemonicParsing="false" text="Action 2" />
@@ -32,7 +31,6 @@
             </MenuButton>
             <Button fx:id="Back" layoutX="164.0" layoutY="316.0" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #295D8A#295D8A;" text="Back" textFill="WHITE" />
             <Button fx:id="Confirm" layoutX="376.0" layoutY="316.0" mnemonicParsing="false" onAction="#onConfirm" style="-fx-background-color: #295D8A#295D8A;" text="Confirm" textFill="WHITE" />
-            <TextField fx:id="NewSalary" layoutX="187.0" layoutY="244.0" prefHeight="26.0" prefWidth="213.0" text=" \$" />
          </children>
       </AnchorPane>
    </center>

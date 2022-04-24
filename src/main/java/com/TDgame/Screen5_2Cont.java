@@ -22,7 +22,7 @@ public class Screen5_2Cont {
 
     @FXML
     private void onConfirm() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6_M.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
@@ -34,7 +34,7 @@ public class Screen5_2Cont {
 
     @FXML
     private void onBack() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 

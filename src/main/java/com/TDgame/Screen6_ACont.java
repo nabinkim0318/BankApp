@@ -7,7 +7,7 @@ import javafx.scene.control.MenuButton;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class Screen6Cont {
+public class Screen6_ACont {
     final int height = 600;
     final int width = 400;
 
@@ -25,7 +25,7 @@ public class Screen6Cont {
 
     @FXML
     private void onConfirm() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6_M.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
@@ -37,7 +37,7 @@ public class Screen6Cont {
 
     @FXML
     private void onBack() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 

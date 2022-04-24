@@ -3,6 +3,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.MenuButton;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -11,32 +13,78 @@ public class Screen10Cont {
     final int width = 400;
 
     @FXML
-    private Button HireWorker;
+    private Button Confirm;
 
     @FXML
-    private Button PayEmployee;
+    private Button Back;
 
     @FXML
-    private void onHireWorker() throws IOException {
+    private MenuButton AvailableChecking;
+
+    @FXML
+    private MenuButton AvailableSaving;
+
+    @FXML
+    private CheckBox Adding;
+
+    @FXML
+    private void onConfirm() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
-    @FXML
-    private void onPayEmployee() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
-        loadScene2(fxmlLoader1, height, width);
-    }
-
     private void loadScene1(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) HireWorker.getScene().getWindow();
+        Stage stage1 = (Stage) Confirm.getScene().getWindow();
         stage1.setScene(scene1);
+    }
+
+    // If admin, moves to screen 20, if not, moves to screen 24
+    @FXML
+    private void onBack() throws IOException {
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen24.fxml"));
+        loadScene2(fxmlLoader1, height, width);
     }
 
     private void loadScene2(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) PayEmployee.getScene().getWindow();
+        Stage stage1 = (Stage) Back.getScene().getWindow();
         stage1.setScene(scene1);
     }
+
+    @FXML
+    private void onAvailableChecking() throws IOException {
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
+        loadScene3(fxmlLoader1, height, width);
+    }
+
+    private void loadScene3(FXMLLoader fxml, int width, int height) throws IOException {
+        Scene scene1 = new Scene(fxml.load(), width, height);
+        Stage stage1 = (Stage) AvailableChecking.getScene().getWindow();
+        stage1.setScene(scene1);
+    }
+
+    @FXML
+    private void onAvailableSaving() throws IOException {
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
+        loadScene4(fxmlLoader1, height, width);
+    }
+
+    private void loadScene4(FXMLLoader fxml, int width, int height) throws IOException {
+        Scene scene1 = new Scene(fxml.load(), width, height);
+        Stage stage1 = (Stage) AvailableSaving.getScene().getWindow();
+        stage1.setScene(scene1);
+    }
+
+    /*@FXML
+    private void onAdding() throws IOException {
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
+        loadScene5(fxmlLoader1, height, width);
+    }
+
+    private void loadScene5(FXMLLoader fxml, int width, int height) throws IOException {
+        Scene scene1 = new Scene(fxml.load(), width, height);
+        Stage stage1 = (Stage) Adding.getScene().getWindow();
+        stage1.setScene(scene1);
+    }*/
 }

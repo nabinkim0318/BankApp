@@ -18,7 +18,7 @@ public class Screen3Cont {
 
     @FXML
     private void onCancel() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 

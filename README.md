@@ -3,7 +3,7 @@
 CS 4400 project to-do
 - Combine Sophia’s work 
 - Create TextFields in the controller classes
-- Dollar signs
+
 
 - Connecting Sql to Java (how? next.js + mysql npm - maybe)
 - Direct to admin/user/manager pages based on log-in information 

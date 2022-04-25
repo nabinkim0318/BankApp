@@ -9,6 +9,7 @@ module com.example.m2 {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
     opens com.TDgame to javafx.fxml;
     exports com.TDgame;

@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 public class WhatIsJdbc {
     public static void main(String[] args) throws SQLException {
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank_management", "root", "Bohong264664");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank_management", "root", "{your password}");
         Statement s = c.createStatement();
         ResultSet rs = s.executeQuery("select * from person");
         while (rs.next()) {

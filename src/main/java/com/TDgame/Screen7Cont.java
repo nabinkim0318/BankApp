@@ -1,8 +1,11 @@
 package com.TDgame;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.MenuButton;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -18,10 +21,24 @@ public class Screen7Cont {
     private Button Back;
 
     @FXML
-    private MenuButton Bank;
+    private ComboBox<String> Bank;
 
     @FXML
-    private MenuButton Employee;
+    protected void initializeBank() {
+        ObservableList<String> BankList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        Bank.setItems(BankList);
+    }
+
+    @FXML
+    private ComboBox<String> Employee;
+
+    @FXML
+    protected void initializeEmployee() {
+        ObservableList<String> EmployeeList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        Employee.setItems(EmployeeList);
+    }
 
     @FXML
     private void onConfirm() throws IOException {

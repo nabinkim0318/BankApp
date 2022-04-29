@@ -1,8 +1,11 @@
 package com.TDgame;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -13,19 +16,40 @@ public class Screen8_ACont {
     final int width = 400;
 
     @FXML
-    private Button Confirm;
+    private Button Cancel;
 
     @FXML
-    private Button Back;
+    private Button Create;
 
     @FXML
-    private MenuButton Bank;
+    private ComboBox<String> Bank;
 
     @FXML
-    private MenuButton AccountID;
+    protected void initializeBank() {
+        ObservableList<String> BankList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        Bank.setItems(BankList);
+    }
 
     @FXML
-    private MenuButton AccountType;
+    private ComboBox<String> AccountID;
+
+    @FXML
+    protected void initializeAccountID() {
+        ObservableList<String> AccountIDList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        AccountID.setItems(AccountIDList);
+    }
+
+    @FXML
+    private ComboBox<String> AccountType;
+
+    @FXML
+    protected void initializeAccountType() {
+        ObservableList<String> AccountTypeList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        AccountType.setItems(AccountTypeList);
+    }
 
     @FXML
     private TextField InitialBalance;
@@ -40,26 +64,26 @@ public class Screen8_ACont {
     private TextField InterestRate;
 
     @FXML
-    private void onConfirm() throws IOException {
+    private void onCreate() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
     private void loadScene1(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) Confirm.getScene().getWindow();
+        Stage stage1 = (Stage) Create.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onBack() throws IOException {
+    private void onCancel() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 
     private void loadScene2(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) Back.getScene().getWindow();
+        Stage stage1 = (Stage) Cancel.getScene().getWindow();
         stage1.setScene(scene1);
     }
 

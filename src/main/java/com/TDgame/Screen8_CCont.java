@@ -1,11 +1,10 @@
 package com.TDgame;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.scene.control.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -14,16 +13,30 @@ public class Screen8_CCont {
     final int width = 400;
 
     @FXML
-    private Button Confirm;
+    private Button Create;
 
     @FXML
-    private Button Back;
+    private Button Cancel;
 
     @FXML
-    private MenuButton AccessibleAccounts;
+    private ComboBox<String> AccessibleAccounts;
 
     @FXML
-    private MenuButton Customer;
+    protected void initializeAccounts() {
+        ObservableList<String> accessibleAccountList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        AccessibleAccounts.setItems(accessibleAccountList);
+    }
+
+    @FXML
+    private ComboBox<String> Customer;
+
+    @FXML
+    protected void initializeCustomer() {
+        ObservableList<String> CustomerList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        Customer.setItems(CustomerList);
+    }
 
     @FXML
     private CheckBox AddingOwner;
@@ -41,26 +54,26 @@ public class Screen8_CCont {
     private TextField InterestRate;
 
     @FXML
-    private void onConfirm() throws IOException {
+    private void onCreate() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
     private void loadScene1(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) Confirm.getScene().getWindow();
+        Stage stage1 = (Stage) Create.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onBack() throws IOException {
+    private void onCancel() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen24.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 
     private void loadScene2(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) Back.getScene().getWindow();
+        Stage stage1 = (Stage) Cancel.getScene().getWindow();
         stage1.setScene(scene1);
     }
 

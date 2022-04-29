@@ -18,7 +18,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         mainStage = stage;
         stage.setResizable(false);
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), height, width); //"/views/Screen24.fxml"
         stage.setTitle("BankApp");
         stage.setScene(scene);

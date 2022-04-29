@@ -1,11 +1,10 @@
 package com.TDgame;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.scene.control.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -20,16 +19,44 @@ public class Screen12Cont {
     private Button Back;
 
     @FXML
-    private MenuButton Bank;
+    private ComboBox<String> Bank;
 
     @FXML
-    private MenuButton Account;
+    protected void initializeBank() {
+        ObservableList<String> BankList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        Bank.setItems(BankList);
+    }
 
     @FXML
-    private MenuButton BankTwo;
+    private ComboBox<String> Account;
 
     @FXML
-    private MenuButton AccountTwo;
+    protected void initializeAccount() {
+        ObservableList<String> AccountList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        Account.setItems(AccountList);
+    }
+
+    @FXML
+    private ComboBox<String> BankTwo;
+
+    @FXML
+    protected void initializeBankTwo() {
+        ObservableList<String> BankTwoList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        BankTwo.setItems(BankTwoList);
+    }
+
+    @FXML
+    private ComboBox<String> AccountTwo;
+
+    @FXML
+    protected void initializeAccountTwo() {
+        ObservableList<String> AccountTwoList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        AccountTwo.setItems(AccountTwoList);
+    }
 
     @FXML
     private TextField Amount;

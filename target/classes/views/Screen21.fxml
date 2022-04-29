@@ -6,15 +6,15 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TDgame.Screen21Cont">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.TDgame.Screen21Cont">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: aliceblue;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="CreateEmployee" layoutX="232.0" layoutY="143.0" mnemonicParsing="false" onAction="#onCreateEmployee" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4;" text="Create Employee Role" textFill="#fcfcfc" />
-            <Button fx:id="CreateCustomer" layoutX="232.0" layoutY="195.0" mnemonicParsing="false" onAction="#onCreateCustomer" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Create Customer Role" textFill="#fcf6f6" />
-            <Button fx:id="StopEmployee" layoutX="238.0" layoutY="245.0" mnemonicParsing="false" onAction="#onStopEmployee" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Stop Employee Role" textFill="#fcfcfc" />
-            <Button fx:id="StopCustomer" layoutX="237.0" layoutY="296.0" mnemonicParsing="false" onAction="#onStopCustomer" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Stop Customer Role" textFill="#fcfcfc" />
-            <Label layoutX="225.0" layoutY="76.0" text="Manage Users">
+            <Button fx:id="CreateEmployee" layoutX="228.0" layoutY="134.0" mnemonicParsing="false" onAction="#onCreateEmployee" prefWidth="140.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4;" text="Create Employee Role" textFill="#fcfcfc" />
+            <Button fx:id="CreateCustomer" layoutX="228.0" layoutY="186.0" mnemonicParsing="false" onAction="#onCreateCustomer" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Create Customer Role" textFill="#fcf6f6" />
+            <Button fx:id="StopEmployee" layoutX="230.0" layoutY="238.0" mnemonicParsing="false" onAction="#onStopEmployee" prefWidth="140.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Stop Employee Role" textFill="#fcfcfc" />
+            <Button fx:id="StopCustomer" layoutX="230.0" layoutY="288.0" mnemonicParsing="false" onAction="#onStopCustomer" prefWidth="140.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Stop Customer Role" textFill="#fcfcfc" />
+            <Label layoutX="221.0" layoutY="60.0" text="Manage Users">
                <font>
                   <Font name="Hiragino Sans W5" size="21.0" />
                </font>

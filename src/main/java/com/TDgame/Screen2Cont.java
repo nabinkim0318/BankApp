@@ -1,8 +1,11 @@
 package com.TDgame;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -16,6 +19,36 @@ public class Screen2Cont {
 
     @FXML
     private Button create;
+
+    @FXML
+    private ComboBox<String> corpID;
+
+    @FXML
+    protected void initializeCorpID() {
+        ObservableList<String> corpIDList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        corpID.setItems(corpIDList);
+    }
+
+    @FXML
+    private ComboBox<String> manager;
+
+    @FXML
+    protected void initializeManager() {
+        ObservableList<String> managerList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        manager.setItems(managerList);
+    }
+
+    @FXML
+    private ComboBox<String> employee;
+
+    @FXML
+    protected void initializeEmployee() {
+        ObservableList<String> employeeList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        employee.setItems(employeeList);
+    }
 
     @FXML
     private TextField Name;

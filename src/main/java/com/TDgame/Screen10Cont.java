@@ -1,9 +1,12 @@
 package com.TDgame;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.MenuButton;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -19,10 +22,24 @@ public class Screen10Cont {
     private Button Back;
 
     @FXML
-    private MenuButton AvailableChecking;
+    private ComboBox<String> AvailableChecking;
 
     @FXML
-    private MenuButton AvailableSaving;
+    protected void initializeChecking() {
+        ObservableList<String> checkingList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        AvailableChecking.setItems(checkingList);
+    }
+
+    @FXML
+    private ComboBox<String> AvailableSaving;
+
+    @FXML
+    protected void initializeSaving() {
+        ObservableList<String> savingList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        AvailableSaving.setItems(savingList);
+    }
 
     @FXML
     private CheckBox Adding;
@@ -42,7 +59,7 @@ public class Screen10Cont {
     // If admin, moves to screen 20, if not, moves to screen 24
     @FXML
     private void onBack() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen24.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 

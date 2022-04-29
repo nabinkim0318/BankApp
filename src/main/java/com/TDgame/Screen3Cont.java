@@ -1,8 +1,11 @@
 package com.TDgame;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -25,6 +28,16 @@ public class Screen3Cont {
 
     @FXML
     private TextField Accumulated;
+
+    @FXML
+    private ComboBox<String> EmployeeID;
+
+    @FXML
+    protected void initialize() {
+        ObservableList<String> employeeIDList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        EmployeeID.setItems(employeeIDList);
+    }
 
     @FXML
     private void onCancel() throws IOException {

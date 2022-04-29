@@ -1,11 +1,10 @@
 package com.TDgame;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.scene.control.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -20,10 +19,24 @@ public class Screen9Cont {
     private Button Back;
 
     @FXML
-    private MenuButton Bank;
+    private ComboBox<String> Bank;
 
     @FXML
-    private MenuButton Account;
+    protected void initializeBank() {
+        ObservableList<String> BankList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        Bank.setItems(BankList);
+    }
+
+    @FXML
+    private ComboBox<String> Account;
+
+    @FXML
+    protected void initializeAccount() {
+        ObservableList<String> AccountList =
+                FXCollections.observableArrayList("Easy", "Medium", "Hard");
+        Account.setItems(AccountList);
+    }
 
     @FXML
     private TextField FeeType;
@@ -42,7 +55,7 @@ public class Screen9Cont {
 
     @FXML
     private void onBack() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen9.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 

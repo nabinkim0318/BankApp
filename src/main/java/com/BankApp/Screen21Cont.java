@@ -50,7 +50,7 @@ public class Screen21Cont {
     @FXML
     private void onStopEmployee() throws IOException {
         FXMLLoader fxmlLoader3 = new FXMLLoader(getClass().getResource("/views/Screen5_E.fxml"));
-        loadScene1(fxmlLoader3, height, width);
+        loadScene3(fxmlLoader3, height, width);
     }
 
     private void loadScene3(FXMLLoader fxml, int width, int height) throws IOException {
@@ -62,7 +62,7 @@ public class Screen21Cont {
     @FXML
     private void onStopCustomer() throws IOException {
         FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen5_C.fxml"));
-        loadScene1(fxmlLoader4, height, width);
+        loadScene4(fxmlLoader4, height, width);
     }
 
     private void loadScene4(FXMLLoader fxml, int width, int height) throws IOException {

@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 <?import javafx.scene.control.ComboBox?>
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.BankApp.Screen8_CCont">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.BankApp.Screen8_C">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: aliceblue;" BorderPane.alignment="CENTER">
          <children>
@@ -18,16 +18,16 @@
                   <Font name="Hiragino Sans W5" size="21.0" />
                </font>
             </Label>
-            <Button fx:id="Cancel" layoutX="164.0" layoutY="323.0" onAction="#onCancel" mnemonicParsing="false" style="-fx-background-color: #295D8A#295D8A;" text="Cancel" textFill="WHITE" />
-            <Button fx:id="Create" layoutX="376.0" layoutY="323.0" onAction="#onCreate" mnemonicParsing="false" style="-fx-background-color: #295D8A#295D8A;" text="Create" textFill="WHITE" />
+            <Button fx:id="Back" layoutX="164.0" layoutY="323.0" onAction="#onCancel" mnemonicParsing="false" style="-fx-background-color: #295D8A#295D8A;" text="Cancel" textFill="WHITE" />
+            <Button fx:id="Confirm" layoutX="376.0" layoutY="323.0" onAction="#onCreate" mnemonicParsing="false" style="-fx-background-color: #295D8A#295D8A;" text="Create" textFill="WHITE" />
             <TextField fx:id="InitialBalance" layoutX="146.0" layoutY="245.0" prefHeight="26.0" prefWidth="136.0" text="Initial balance" />
-            <ComboBox fx:id="AccessibleAccounts" layoutX="193.0" layoutY="139.0" onAction="#onAccessibleAccounts" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
+            <ComboBox fx:id="AccountID" layoutX="193.0" layoutY="139.0" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
             </ComboBox>
-            <ComboBox fx:id="Customer" layoutX="194.0" layoutY="172.0" onAction="#onCustomer" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;" >
+            <ComboBox fx:id="CustomerID" layoutX="194.0" layoutY="172.0" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;" >
             </ComboBox>
-            <TextField layoutX="146.0" layoutY="278.0" prefHeight="26.0" prefWidth="136.0" text="Min Balance" />
-            <TextField layoutX="308.0" layoutY="278.0" prefHeight="26.0" prefWidth="136.0" text=" Max Withdrawals" />
-            <TextField fx:id="IterestRate" layoutX="308.0" layoutY="245.0" prefHeight="26.0" prefWidth="136.0" text=" Interest Rate" />
+            <TextField fx:id="MinBalance" layoutX="146.0" layoutY="278.0" prefHeight="26.0" prefWidth="136.0" text="Min Balance" />
+            <TextField fx:id="MaxWithdrawals" layoutX="308.0" layoutY="278.0" prefHeight="26.0" prefWidth="136.0" text=" Max Withdrawals" />
+            <TextField fx:id="InterestRate" layoutX="308.0" layoutY="245.0" prefHeight="26.0" prefWidth="136.0" text=" Interest Rate" />
             <Label layoutX="236.0" layoutY="118.0" text="Add/Remove Owners">
                <font>
                   <Font size="14.0" />

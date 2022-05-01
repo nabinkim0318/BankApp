@@ -43,9 +43,9 @@
             <TextField fx:id="ReservedAssets" layoutX="221.0" layoutY="333.0" prefHeight="26.0" prefWidth="72.0" />
             <ComboBox fx:id="CorporationID" layoutX="330.0" layoutY="253.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
             </ComboBox>
-            <ComboBox fx:id="Employee" layoutX="330.0" layoutY="285.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
+            <ComboBox fx:id="EmployeeID" layoutX="330.0" layoutY="285.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
             </ComboBox>
-            <ComboBox fx:id="Manager" layoutX="108.0" layoutY="285.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
+            <ComboBox fx:id="ManagerID" layoutX="108.0" layoutY="285.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
             </ComboBox>
             <Button fx:id="Cancel" layoutX="130.0" layoutY="333.0" mnemonicParsing="false" onAction="#onCancel" style="-fx-background-color: #295D8A;" text="Cancel" textFill="WHITE" />
             <Button fx:id="Create" layoutX="360.0" layoutY="333.0" mnemonicParsing="false" onAction="#onCreate" style="-fx-background-color: #295D8A;" text="Create" textFill="WHITE" />

@@ -36,9 +36,9 @@ public class Screen2 implements Initializable {
     @FXML
     private ComboBox<String> CorporationID = new ComboBox<>();
     @FXML
-    private ComboBox<String> Manager = new ComboBox<>();
+    private ComboBox<String> ManagerID = new ComboBox<>();
     @FXML
-    private ComboBox<String> Employee = new ComboBox<>();
+    private ComboBox<String> EmployeeID = new ComboBox<>();
     @FXML
     private Button Cancel;
     @FXML
@@ -48,8 +48,8 @@ public class Screen2 implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
             initializeCorporationID();
-            initializeManager();
-            initializeEmployee();
+            initializeManagerID();
+            initializeEmployeeID();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -64,22 +64,22 @@ public class Screen2 implements Initializable {
         CorporationID.setItems(list);
     }
 
-    private void initializeManager() throws SQLException {
+    private void initializeManagerID() throws SQLException {
         ObservableList<String> list = FXCollections.observableArrayList();
         ResultSet set = Connect.getConnection().createStatement().executeQuery("select perID from employee where perID not in (select manager from bank) and perID not in (select perID from workFor);");
         while (set.next()) {
             list.add(set.getString(1));
         }
-        Manager.setItems(list);
+        ManagerID.setItems(list);
     }
 
-    private void initializeEmployee() throws SQLException {
+    private void initializeEmployeeID() throws SQLException {
         ObservableList<String> list = FXCollections.observableArrayList();
         ResultSet set = Connect.getConnection().createStatement().executeQuery("select perID from employee where perID not in (select manager from bank);");
         while (set.next()) {
             list.add(set.getString(1));
         }
-        Employee.setItems(list);
+        EmployeeID.setItems(list);
     }
 
     @FXML
@@ -91,11 +91,7 @@ public class Screen2 implements Initializable {
     }
 
     @FXML
-    private void onCreate() throws IOException, SQLException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen15.fxml"));
-        Scene scene = new Scene(loader.load(), 600, 400);
-        Stage stage = (Stage) Create.getScene().getWindow();
-        stage.setScene(scene);
+    private void onCreate() throws SQLException, IOException {
         CallableStatement statement = Connect.getConnection().prepareCall("{call create_bank(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}");
         statement.setString(1, BankID.getText());
         statement.setString(2, Name.getText());
@@ -105,20 +101,12 @@ public class Screen2 implements Initializable {
         statement.setString(6, ZipCode.getText());
         statement.setString(7, ReservedAssets.getText());
         statement.setString(8, CorporationID.getValue());
-        statement.setString(9, Manager.getValue());
-        statement.setString(10, Employee.getValue());
+        statement.setString(9, ManagerID.getValue());
+        statement.setString(10, EmployeeID.getValue());
         statement.execute();
-        ResultSet set = Connect.getConnection().createStatement().executeQuery("select * from bank;");
-        while (set.next()) {
-            System.out.println(set.getString(1) + ", " +
-                    set.getString(2) + ", " +
-                    set.getString(3) + ", " +
-                    set.getString(4) + ", " +
-                    set.getString(5) + ", " +
-                    set.getString(6) + ", " +
-                    set.getString(7) + ", " +
-                    set.getString(8) + ", " +
-                    set.getString(9));
-        }
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
+        Scene scene = new Scene(loader.load(), 600, 400);
+        Stage stage = (Stage) Create.getScene().getWindow();
+        stage.setScene(scene);
     }
 }

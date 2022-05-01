@@ -1,4 +1,4 @@
-package com.TDgame;
+package com.BankApp;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -6,16 +6,16 @@ import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.MenuButton;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class Screen6_MCont {
+public class Screen11_2Cont {
     final int height = 600;
     final int width = 400;
 
     @FXML
-    private Button Confirm;
+    private Button Withdraw;
 
     @FXML
     private Button Back;
@@ -31,30 +31,34 @@ public class Screen6_MCont {
     }
 
     @FXML
-    private ComboBox<String> Employee;
+    private ComboBox<String> Account;
 
     @FXML
-    protected void initializeEmployee() {
-        ObservableList<String> EmployeeList =
+    protected void initializeAccount() {
+        ObservableList<String> AccountList =
                 FXCollections.observableArrayList("Easy", "Medium", "Hard");
-        Employee.setItems(EmployeeList);
+        Account.setItems(AccountList);
     }
 
     @FXML
-    private void onConfirm() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen6_M.fxml"));
+    private TextField Amount;
+
+    @FXML
+    //Should fix withdraw - not move to another screen
+    private void onWithdraw() throws IOException {
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen24.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
     private void loadScene1(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) Confirm.getScene().getWindow();
+        Stage stage1 = (Stage) Withdraw.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
     private void onBack() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen23.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen24.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 
@@ -77,14 +81,14 @@ public class Screen6_MCont {
     }
 
     @FXML
-    private void onEmployee() throws IOException {
+    private void onAccount() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen13.fxml"));
         loadScene4(fxmlLoader1, height, width);
     }
 
     private void loadScene4(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) Employee.getScene().getWindow();
+        Stage stage1 = (Stage) Account.getScene().getWindow();
         stage1.setScene(scene1);
     }
 }

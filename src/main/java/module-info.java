@@ -1,4 +1,4 @@
-module com.example.m2 {
+module com.BankApp {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -11,6 +11,6 @@ module com.example.m2 {
     requires eu.hansolo.tilesfx;
     requires java.sql;
 
-    opens com.TDgame to javafx.fxml;
-    exports com.TDgame;
+    opens com.BankApp to javafx.fxml;
+    exports com.BankApp;
 }

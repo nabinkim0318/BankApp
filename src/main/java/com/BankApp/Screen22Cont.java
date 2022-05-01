@@ -1,4 +1,4 @@
-package com.TDgame;
+package com.BankApp;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
@@ -6,83 +6,83 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class Screen24Cont {
+public class Screen22Cont {
     final int height = 600;
     final int width = 400;
 
     @FXML
-    private Button ManageAccounts;
+    private Button AccountStats;
 
     @FXML
-    private Button Deposit;
+    private Button CorporationStats;
 
     @FXML
-    private Button ManageOverdraft;
+    private Button BankStats;
 
     @FXML
-    private Button MakeTransfer;
+    private Button CustomerStats;
 
     @FXML
-    private Button Withdrawal;
+    private Button EmployeeStats;
 
 
     @FXML
-    private void onManageAccounts() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen8_C.fxml"));
+    private void onAccountStats() throws IOException {
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen14.fxml"));
         loadScene1(fxmlLoader1, height, width);
     }
 
     private void loadScene1(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) ManageAccounts.getScene().getWindow();
+        Stage stage1 = (Stage) AccountStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onDeposit() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen11_1.fxml"));
+    private void onCorporationStats() throws IOException {
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen16.fxml"));
         loadScene2(fxmlLoader1, height, width);
     }
 
     private void loadScene2(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) Deposit.getScene().getWindow();
+        Stage stage1 = (Stage) CorporationStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onManageOverdraft() throws IOException {
-        FXMLLoader fxmlLoader3 = new FXMLLoader(getClass().getResource("/views/Screen10.fxml"));
+    private void onBankStats() throws IOException {
+        FXMLLoader fxmlLoader3 = new FXMLLoader(getClass().getResource("/views/Screen15.fxml"));
         loadScene3(fxmlLoader3, height, width);
     }
 
     private void loadScene3(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) ManageOverdraft.getScene().getWindow();
+        Stage stage1 = (Stage) BankStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onMakeTransfer() throws IOException {
-        FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen12.fxml"));
+    private void onCustomerStats() throws IOException {
+        FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen17.fxml"));
         loadScene4(fxmlLoader4, height, width);
     }
 
     private void loadScene4(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) MakeTransfer.getScene().getWindow();
+        Stage stage1 = (Stage) CustomerStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 
     @FXML
-    private void onWithdrawal() throws IOException {
-        FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen11_2.fxml"));
+    private void onEmployeeStats() throws IOException {
+        FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("/views/Screen18.fxml"));
         loadScene5(fxmlLoader4, height, width);
     }
 
     private void loadScene5(FXMLLoader fxml, int width, int height) throws IOException {
         Scene scene1 = new Scene(fxml.load(), width, height);
-        Stage stage1 = (Stage) Withdrawal.getScene().getWindow();
+        Stage stage1 = (Stage) EmployeeStats.getScene().getWindow();
         stage1.setScene(scene1);
     }
 }

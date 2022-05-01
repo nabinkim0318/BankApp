@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 <?import javafx.scene.control.ComboBox?>
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TDgame.Screen4Cont">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.BankApp.Screen4">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: aliceblue;" BorderPane.alignment="CENTER">
          <children>
@@ -16,9 +16,9 @@
                   <Font name="Hiragino Sans W5" size="21.0" />
                </font>
             </Label>
-            <ComboBox fx:id="ID" layoutX="193.0" layoutY="186.0" onAction="#onID" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
+            <ComboBox fx:id="CustomerID" layoutX="193.0" layoutY="186.0" prefWidth="213.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
             </ComboBox>
-            <Button fx:id="confirm" layoutX="377.0" layoutY="316.0" mnemonicParsing="false" onAction="#onConfirm" style="-fx-background-color: #295D8A;" text="Confirm" textFill="WHITE" />
+            <Button fx:id="Confirm" layoutX="377.0" layoutY="316.0" mnemonicParsing="false" onAction="#onConfirm" style="-fx-background-color: #295D8A;" text="Confirm" textFill="WHITE" />
             <Button fx:id="Back" layoutX="164.0" layoutY="316.0" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #295D8A;" text="Back" textFill="WHITE" />
          </children>
       </AnchorPane>

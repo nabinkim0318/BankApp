@@ -8,7 +8,11 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TDgame.Screen2Cont">
+=======
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.BankApp.Screen2">
+>>>>>>> 9347159da76f55df50c6beff14990e34a0e71931
    <center>
       <AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: aliceblue;" BorderPane.alignment="CENTER">
          <children>
@@ -41,14 +45,14 @@
             </Label>
             <Label contentDisplay="CENTER" layoutX="109.0" layoutY="256.0" prefHeight="24.0" prefWidth="113.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="   Reserved Assets" textAlignment="CENTER" textFill="WHITE" />
             <TextField fx:id="ReservedAssets" layoutX="221.0" layoutY="333.0" prefHeight="26.0" prefWidth="72.0" />
-            <ComboBox fx:id="BA" layoutX="330.0" layoutY="253.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
+            <ComboBox fx:id="CorporationID" layoutX="330.0" layoutY="253.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
             </ComboBox>
-            <ComboBox fx:id="name" layoutX="330.0" layoutY="285.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
+            <ComboBox fx:id="EmployeeID" layoutX="330.0" layoutY="285.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
             </ComboBox>
-            <ComboBox fx:id="ID" layoutX="108.0" layoutY="285.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
+            <ComboBox fx:id="ManagerID" layoutX="108.0" layoutY="285.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4; -fx-border-color: white;">
             </ComboBox>
-            <Button fx:id="cancel" layoutX="130.0" layoutY="333.0" mnemonicParsing="false" onAction="#onCancel" style="-fx-background-color: #295D8A;" text="Cancel" textFill="WHITE" />
-            <Button fx:id="create" layoutX="360.0" layoutY="333.0" mnemonicParsing="false" onAction="#onCreate" style="-fx-background-color: #295D8A;" text="Create" textFill="WHITE" />
+            <Button fx:id="Cancel" layoutX="130.0" layoutY="333.0" mnemonicParsing="false" onAction="#onCancel" style="-fx-background-color: #295D8A;" text="Cancel" textFill="WHITE" />
+            <Button fx:id="Create" layoutX="360.0" layoutY="333.0" mnemonicParsing="false" onAction="#onCreate" style="-fx-background-color: #295D8A;" text="Create" textFill="WHITE" />
          </children>
       </AnchorPane>
    </center>

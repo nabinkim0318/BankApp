@@ -8,7 +8,7 @@ public class Connect {
     private static Connection connection;
     static {
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank_management", "root", "Bohong264664");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank_management", "root", "password");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

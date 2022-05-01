@@ -43,7 +43,7 @@ public class Screen20Cont {
     @FXML
     private void onViewStats() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen22.fxml"));
-        loadScene1(fxmlLoader1, width, height);
+        loadScene1(fxmlLoader1, height, width);
     }
 
     private void loadScene1(FXMLLoader fxml, int width, int height) throws IOException {
@@ -55,7 +55,7 @@ public class Screen20Cont {
     @FXML
     private void onCreateCorporation() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen1.fxml"));
-        loadScene2(fxmlLoader1, width, height);
+        loadScene2(fxmlLoader1, height, width);
     }
 
     private void loadScene2(FXMLLoader fxml, int width, int height) throws IOException {
@@ -67,7 +67,7 @@ public class Screen20Cont {
     @FXML
     private void onCreateFee() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen9.fxml"));
-        loadScene3(fxmlLoader1, width, height);
+        loadScene3(fxmlLoader1, height, width);
     }
 
     private void loadScene3(FXMLLoader fxml, int width, int height) throws IOException {

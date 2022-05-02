@@ -46,7 +46,7 @@ public class Screen5_C implements Initializable {
 
     @FXML
     private void onBack() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
         Scene scene = new Scene(loader.load(), 600, 400);
         Stage stage = (Stage) Back.getScene().getWindow();
         stage.setScene(scene);
@@ -57,7 +57,7 @@ public class Screen5_C implements Initializable {
         CallableStatement statement = Connect.getConnection().prepareCall("{call stop_customer_role(?)}");
         statement.setString(1, CustomerID.getValue());
         statement.execute();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
         Scene scene = new Scene(loader.load(), 600, 400);
         Stage stage = (Stage) Confirm.getScene().getWindow();
         stage.setScene(scene);

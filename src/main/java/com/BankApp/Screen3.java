@@ -53,7 +53,7 @@ public class Screen3 implements Initializable {
 
     @FXML
     private void onCancel() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
         Scene scene = new Scene(loader.load(), 600, 400);
         Stage stage = (Stage) Cancel.getScene().getWindow();
         stage.setScene(scene);
@@ -77,7 +77,7 @@ public class Screen3 implements Initializable {
         statement.setString(13, AccumulatedEarnings.getText());
         statement.setString(14, null);
         statement.execute();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
         Scene scene = new Scene(loader.load(), 600, 400);
         Stage stage = (Stage) Create.getScene().getWindow();
         stage.setScene(scene);

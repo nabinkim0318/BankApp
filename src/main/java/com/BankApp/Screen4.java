@@ -46,7 +46,7 @@ public class Screen4 implements Initializable {
 
     @FXML
     private void onBack() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
         Scene scene = new Scene(loader.load(), 600, 400);
         Stage stage = (Stage) Back.getScene().getWindow();
         stage.setScene(scene);
@@ -67,7 +67,7 @@ public class Screen4 implements Initializable {
         statement.setString(10, null);
         statement.setString(11, null);
         statement.execute();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen20.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Screen21.fxml"));
         Scene scene = new Scene(loader.load(), 600, 400);
         Stage stage = (Stage) Confirm.getScene().getWindow();
         stage.setScene(scene);

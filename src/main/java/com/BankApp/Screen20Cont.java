@@ -150,7 +150,7 @@ public class Screen20Cont {
 
     @FXML
     private void onCreateBank() throws IOException {
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen1.fxml"));
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/views/Screen2.fxml"));
         loadScene10(fxmlLoader1, height, width);
     }
 

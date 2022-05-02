@@ -16,7 +16,7 @@ We used Scene Builder to develop user interface screens.
 Work was broken down to tailor to skill sets:
   Andy: Implement code
   Nabin: Make scenes
-  Sloan: Make constraints and error messages
+  Sloan: Make constraints,tables, error messages
   Sophia: Implement code
 
 

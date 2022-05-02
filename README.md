@@ -1,7 +1,7 @@
 # CS4400_BankApp
 How to set up and run app:
 	
-  Download CS4400_BankApp
+  git clone CS4400_BankApp
   Download JDBC MYSql Connector (https://dev.mysql.com/downloads/connector/j/)
   Add newly downloaded .jar file to modules in preferred IDE 
   Under src<main<java<com.BankApp<Connect<line 11 -> Change “password” to your personal MySQL password
@@ -14,9 +14,9 @@ We used Scene Builder to develop user interface screens.
                                         
 
 Work was broken down to tailor to skill sets:
-  Andy: Input error conditions and button functionality
-  Nabin: Create display screens
-  Sloan: Find error constraints and create messages, look for edge cases
+  Andy: 
+  Nabin: 
+  Sloan: 
   Sophia: 
 
 

@@ -1,0 +1,34 @@
+SETUP AND RUN INSTRUCTIONS
+1. Goto https://dev.mysql.com/downloads/connector/j/
+2. Select Platform Independent as the Operating System
+3. Download the ZIP Archive
+4. Open the BankApp project in Intellij
+5. Click the File tab
+6. Click Project Structure
+7. Click Modules under Project Settings
+8. Click the Dependencies tab
+9. Click the + sign
+10. Click JARs or Directories...
+11. Navigate to the mysql-connector-java-8.0.29.jar file and open it
+12. Click Apply and OK at the bottom
+13. Navigate to the Connect.java file and open it
+14. Replace {your password} on line 11 with your personal MySQL password
+15. Open the cs4400_bank_management_database_v3.sql and cs4400_phase3_shell.sql file in MySQLWorkbench in root local instance 3306
+16. Execute both files
+17. Navigate to the Main.java file and right click it
+18. Click Run 'Main.main()'
+
+SOFTWARE USED
+- We used Intellij as our IDE to write our source code in Java
+- We used JavaFX and Scene Builder to design our GUI screens
+- We used MySQL to store our database and stored procedures
+- We used JDBC to connect our database to our GUI
+- We used Github to write our source code in a collaborative manner
+
+WORK DISTRIBUTION
+Andy: Connected and implemented database to GUI source code
+Nabin: Created and designed screens with JavaFX
+Sloan: Handled constraints and edge cases with non-crashing error messages
+Sophia: Researched and applied useful MySQL to Java class methods
+
+

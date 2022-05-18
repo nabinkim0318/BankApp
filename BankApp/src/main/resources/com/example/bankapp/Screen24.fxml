@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankapp.Screen24">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: aliceblue;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="AddAccess" layoutX="190.0" layoutY="273.0" mnemonicParsing="false" onAction="#onAddAccess" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4;" text="Add Access" textFill="#fcfcfc" />
+                <Button fx:id="Deposit" layoutX="224.0" layoutY="191.0" mnemonicParsing="false" onAction="#onDeposit" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Deposit " textFill="#fcf6f6" />
+                <Button fx:id="StartOverdraft" layoutX="188.0" layoutY="234.0" mnemonicParsing="false" onAction="#onStartOverdraft" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Start Overdraft" textFill="#fcfcfc" />
+                <Button fx:id="MakeTransfer" layoutX="252.0" layoutY="153.0" mnemonicParsing="false" onAction="#onMakeTransfer" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Make Transfer" textFill="#fcfcfc" />
+                <Label layoutX="225.0" layoutY="77.0" text="Customer Menu">
+                    <font>
+                        <Font name="Hiragino Sans W5" size="21.0" />
+                    </font>
+                </Label>
+                <Button fx:id="Withdrawal" layoutX="323.0" layoutY="191.0" mnemonicParsing="false" onAction="#onWithdrawal" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Withdrawal" textFill="#fcf6f6" />
+                <Button fx:id="StopOverdraft" layoutX="323.0" layoutY="234.0" mnemonicParsing="false" onAction="#onStopOverdraft" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4 #4682B4#4682B4;" text="Stop Overdraft" textFill="#fcfcfc" />
+                <Button fx:id="RemoveAccess" layoutX="325.0" layoutY="273.0" mnemonicParsing="false" onAction="#onRemoveAccess" style="-fx-background-color: #4682B4#4682B4 #4682B4#4682B4;" text="Remove Access" textFill="#fcfcfc" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

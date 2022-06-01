@@ -25,10 +25,5 @@ SOFTWARE USED
 - We used JDBC to connect our database to our GUI
 - We used Github to write our source code in a collaborative manner
 
-WORK DISTRIBUTION
-Andy: Connected and implemented database to GUI source code
-Nabin: Created and designed screens with JavaFX
-Sloan: Handled constraints and edge cases with non-crashing error messages
-Sophia: Researched and applied useful MySQL to Java class methods
 
 
